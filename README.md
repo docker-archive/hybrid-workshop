@@ -67,9 +67,9 @@ Throughout the lab you will be asked to provide either hostnames or login creden
 
 	![](./images/linux75.png)
 
-
 - When you see the Windows flag all the subsequent instructions should be completed in your Windows console
-	![](./images/windows75.png)
+
+    ![](./images/windows75.png)
 
 ## <a name="task1"></a>Task 1: Configure the Docker EE Cluster
 
@@ -178,7 +178,7 @@ Let's start with the Linux version.
 2. Use git to clone the workshop repository.
 
 	```
-	$ git clone https://github.com/mikegcoleman/hybrid-workshop.git
+	$ git clone https://github.com/dockersamples/hybrid-workshop.git
 	```
 
 	You should see something like this as the output:
