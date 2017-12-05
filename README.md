@@ -210,34 +210,32 @@ Let's start with the Linux version.
 
 	The `-t` tags the image with a name. In our case, the name indicates which DTR server and under which user's respository the image will live.
 
-> **Note**: Feel free to examine the Dockerfile in this directory if you'd like to see how the image is being built.
+	> **Note**: Feel free to examine the Dockerfile in this directory if you'd like to see how the image is being built.
 
 	Your output should be similar to what is shown below
 
-	```
-	Sending build context to Docker daemon  4.096kB
-	Step 1/4 : FROM nginx:latest
-	latest: Pulling from library/nginx
-	ff3d52d8f55f: Pull complete
-	b05436c68d6a: Pull complete
-	961dd3f5d836: Pull complete
-	Digest: sha256:12d30ce421ad530494d588f87b2328ddc3cae666e77ea1ae5ac3a6661e52cde6
-	Status: Downloaded newer image for nginx:latest
-	 ---> 3448f27c273f
-	Step 2/4 : COPY index.html /usr/share/nginx/html
-	 ---> 72d22997a765
-	Removing intermediate container e262b9220942
-	Step 3/4 : EXPOSE 80 443
-	 ---> Running in 54e4ff1b39a6
-	 ---> 2b5bd87894cd
-	Removing intermediate container 54e4ff1b39a6
-	Step 4/4 : CMD nginx -g daemon off;
-	 ---> Running in 54020cdec942
-	 ---> ed5f550fc339
-	Removing intermediate container 54020cdec942
-	Successfully built ed5f550fc339
-	Successfully tagged  <dtr hostname>/<your user name>/linux_tweet_app:latest
-	```
+		Sending build context to Docker daemon  4.096kB
+		Step 1/4 : FROM nginx:latest
+		latest: Pulling from library/nginx
+		ff3d52d8f55f: Pull complete
+		b05436c68d6a: Pull complete
+		961dd3f5d836: Pull complete
+		Digest: sha256:12d30ce421ad530494d588f87b2328ddc3cae666e77ea1ae5ac3a6661e52cde6
+		Status: Downloaded newer image for nginx:latest
+		---> 3448f27c273f
+		Step 2/4 : COPY index.html /usr/share/nginx/html
+		---> 72d22997a765
+		Removing intermediate container e262b9220942
+		Step 3/4 : EXPOSE 80 443
+		---> Running in 54e4ff1b39a6
+		---> 2b5bd87894cd
+		Removing intermediate container 54e4ff1b39a6
+		Step 4/4 : CMD nginx -g daemon off;
+		---> Running in 54020cdec942
+		---> ed5f550fc339
+		Removing intermediate container 54020cdec942
+		Successfully built ed5f550fc339
+		Successfully tagged  <dtr hostname>/<your user name>/linux_tweet_app:latest
 
 3. Log into your DTR server from the command line
 
